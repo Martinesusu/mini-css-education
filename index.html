@@ -331,61 +331,65 @@
     </section>
 
     <!-- Review Section -->
-    <section class="bg-white py-20">
-      <div class="container mx-auto px-6 flex justify-around space-x-6 relative">
-        <!-- กลุ่มปุ่ม -->
-        <div class="absolute bottom-4 flex items-center space-x-4 z-20">
-          <!-- ปุ่มลูกศรซ้าย -->
-          <button class="w-12 h-12 flex items-center justify-center rounded-full bg-white shadow-md">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-black">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
-          <!-- ปุ่มลูกศรขวา -->
-          <button class="w-12 h-12 flex items-center justify-center rounded-full bg-black shadow-md">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-white">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
-        </div>
-        <!-- Review-box Section -->
-        <div class="relative z-10">
-          <div class="bg-yellow-400 text-white rounded-lg shadow-2xl shadow-yellow-600 p-10 relative z-10 w-[560px] h-[300px] left-28 -top-10">
-            <div class="flex items-center mb-4">
-              <div class="w-20 h-20 bg-gray-200 rounded-full mr-4"></div>
-              <div>
-                <h3 class="text-3xl font-semibold mb-2">Jaquon Hart</h3>
-                <p class="text-lg">Civil Engineer</p>
-              </div>
-            </div>
-            <p class="text-xl leading-loose mb-4">
-              “With Edu, we’re able to easily track our performance in full detail. It’s become an essential tool for us to grow and engage with our audience.”
-            </p>
-            <div class="flex space-x-1 absolute top-14 right-10">
-              <span class="text-white">★</span>
-              <span class="text-white">★</span>
-              <span class="text-white">★</span>
-              <span class="text-white">★</span>
-              <span class="text-white">★</span>
-            </div>
-          </div>
-          <div class="bg-white text-gray-400 p-10 absolute z-0 w-[560px] h-[300px] top-10 -left-2">
-            <div class="flex items-center mb-4">
-              <div class="w-20 h-20 bg-gray-200 rounded-full mr-4"></div>
-            </div>
-            <p class="text-xl leading-loose mb-4">
-              “With Edu, we’re able to easily track our performance in full detail. It’s become an essential tool for us to grow and engage with our audience.”
-            </p>
-          </div>
-        </div>
+    <section class="bg-white py-32">
+      <div class="container mx-auto px-6 grid grid-cols-1 gap-10 items-center
+                  lg:grid-cols-2 lg:gap-96">
         <!-- Text Content -->
-        <div class="text-center lg:text-left mt-10 z-10 w-[360px] h-[300px]">
+        <div class="text-left w-full lg:max-w-[360px] mb-10 lg:mb-0 order-1 lg:order-2">
           <h2 class="text-4xl font-bold text-gray-800 mb-4">
             5000 Reviews from Our Successful Students!
           </h2>
-          <p class="text-sm text-gray-600 leading-relaxed">
+          <p class="text-gray-600 leading-relaxed">
             Treactively recaptualize intermandated e-commerce after sticky applications. Dynamically reintermediate viral testing procedures through technically sound.
           </p>
+        </div>
+
+        <!-- Review-box Section -->
+        <div class="relative order-2 lg:order-1">
+          <div class="relative z-10">
+            <div class="bg-yellow-400 text-white rounded-lg shadow-2xl shadow-yellow-600 p-10 relative z-10 w-full max-w-[560px] h-auto lg:h-[300px] mx-auto lg:ml-auto lg:left-28 -top-10">
+              <div class="flex flex-row mb-16 lg:mb-10 lg:items-start">
+                <div class="w-20 h-20 bg-gray-200 rounded-full mr-4"></div>
+                <div>
+                  <h3 class="text-3xl font-semibold mb-2">Jaquon Hart</h3>
+                  <p class="text-lg">Civil Engineer</p>
+                </div>
+              </div>
+              <p class="lg:text-xl leading-loose mb-4">
+                “With Edu, we’re able to easily track our performance in full detail. It’s become an essential tool for us to grow and engage with our audience.”
+              </p>
+              <div class="flex space-x-1 absolute top-36 lg:top-14 lg:right-10">
+                <span class="text-white">★</span>
+                <span class="text-white">★</span>
+                <span class="text-white">★</span>
+                <span class="text-white">★</span>
+                <span class="text-white">★</span>
+              </div>
+            </div>
+            <div class="bg-white text-gray-400 p-10 absolute z-0 w-full max-w-[560px] h-auto lg:h-[300px] mx-auto lg:ml-auto lg:left-0 top-28 lg:top-10 -left-2">
+              <div class="flex items-center mb-4">
+                <div class="w-20 h-20 bg-gray-200 rounded-full mr-4"></div>
+              </div>
+              <p class="text-xl leading-loose mb-4">
+                “With Edu, we’re able to easily track our performance in full detail. It’s become an essential tool for us to grow and engage with our audience.”
+              </p>
+            </div>
+          </div>
+          <!-- กลุ่มปุ่ม -->
+          <div class="absolute -bottom-24 -right-1 lg:-right-36 flex items-center space-x-4 z-20">
+            <!-- ปุ่มลูกศรซ้าย -->
+            <button class="w-12 h-12 flex items-center justify-center rounded-full bg-white shadow-md">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-black">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <!-- ปุ่มลูกศรขวา -->
+            <button class="w-12 h-12 flex items-center justify-center rounded-full bg-black shadow-md">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-white">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </section>
