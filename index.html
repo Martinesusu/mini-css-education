@@ -10,7 +10,7 @@
   
   <!-- Header -->
   <header class="py-6 bg-white shadow-md">
-    <div class="container flex items-center justify-between mx-auto p-1">
+    <div class="container flex items-center justify-between lg:mx-auto p-4 lg:p-1">
       <div class="flex items-center space-x-20">
         <!-- Logo -->
         <div class="logo">
@@ -25,7 +25,7 @@
           </svg>            
         </div>
         <!-- Navigation -->
-        <nav class="nav-list">
+        <nav class="nav-list hidden lg:flex">
           <ul class="flex space-x-8">
             <li class="relative group">
               <a href="#" class="text-gray-600 hover:text-gray-900 inline-block">
@@ -49,9 +49,25 @@
         </nav>
       </div>
       <!-- Contact Now Button -->
-      <button onclick="this.blur()" class="bg-black font-semibold text-white px-4 py-2 rounded-2xl hover:bg-yellow-400 focus:outline-none focus:ring focus:ring-yellow-500">
+      <button onclick="this.blur()" class="bg-black font-semibold text-white px-4 py-2 rounded-2xl hover:bg-yellow-400 focus:outline-none focus:ring focus:ring-yellow-500 hidden lg:block">
         Contract Now
       </button>
+
+      <!-- Hamburger Button (Mobile) -->
+      <div class="lg:hidden">
+        <button
+          class="text-gray-600 focus:outline-none focus:ring-2 focus:ring-yellow-500"
+          id="menu-toggle"
+        >
+          <!-- Hamburger Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+            <rect x="3" y="6" width="7" height="7" rx="1" class="fill-current"></rect>
+            <rect x="14" y="6" width="7" height="7" rx="1" class="fill-current"></rect>
+            <rect x="3" y="14" width="7" height="7" rx="1" class="fill-current"></rect>
+            <rect x="14" y="14" width="7" height="7" rx="1" class="fill-current"></rect>
+          </svg>
+        </button>
+      </div>
     </div>
   </header>
   
@@ -59,7 +75,7 @@
     <section class="bg-orange-100 py-32">
       <div class="container mx-auto px-6 flex justify-between flex-col-reverse lg:flex-row items-center">
         <div class="flex flex-col items-start text-left space-y-10 w-96">
-          <h1 class="text-6xl font-bold text-gray-800">Start Your Future Education</h1>
+          <h1 class="text-5xl w-60 lg:w-auto lg:text-6xl font-bold text-gray-800">Start Your Future Education</h1>
           <p class="text-lg text-gray-600">Credibly redefine distinctive total linkage vis-a-vis multifunc data. Phosfluorescently impact goal-oriented strategic.</p>
           <button class="bg-yellow-400 shadow-md shadow-yellow-500/70 text-white px-6 py-4 rounded-xl text-lg font-semibold hover:bg-orange-400 hover:shadow-orange-500">Discover More</button>
         </div>
